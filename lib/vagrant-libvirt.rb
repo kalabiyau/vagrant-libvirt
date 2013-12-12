@@ -3,6 +3,7 @@ require 'vagrant-libvirt/plugin'
 
 module VagrantPlugins
   module ProviderLibvirt
+    LIB_ROOT = File.dirname(__FILE__)
     lib_path = Pathname.new(File.expand_path('../vagrant-libvirt', __FILE__))
     autoload :Action, lib_path.join('action')
     autoload :Errors, lib_path.join('errors')
