@@ -1,7 +1,7 @@
 require 'bundler/setup'
 require 'vagrant-libvirt'
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start { add_filter '/spec/' }
 
 RSpec.configure do |config|
   config.order = 'random'
