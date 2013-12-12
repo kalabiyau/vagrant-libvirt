@@ -9,6 +9,7 @@ group :development, :test do
   gem 'vagrant', :git => 'git://github.com/mitchellh/vagrant.git'
   gem 'rspec'
   gem 'rake'
+  gem 'simplecov'
 end
 
 
